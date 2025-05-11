@@ -1,0 +1,7 @@
+#!/bin/bash
+# Copyright by zhaosonggo in 2024, All Rights Reserved.
+
+SCRIPT_PATH=$(dirname $0)
+OLD_PYTHONPATH=$PYTHONPATH
+export PYTHONPATH=${SCRIPT_PATH}:${OLD_PYTHONPATH}
+python3 ${SCRIPT_PATH}/tool_main.py "$@"
